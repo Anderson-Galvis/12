@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <script defer src="/main.js"></script>
+</head>
+<body>
+    <!-- header o encabezado de la pagina -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>Hotel</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">Menu</span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>El Rincon de Camila </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, mollitia nulla? Nisi, ut, voluptates recusandae nulla aut rem asperiores quia temporibus vitae quis aliquid earum culpa blanditiis fugiat, totam ipsam.</p>
+            <button type="button" class="head-btn">Get started</button>
+        </div>
+
+    </header>
+<!-- side navbar-->
+<div class="sidenav" id="sidenav">
+    <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times-circle"></i>     </span>
+
+    <ul class="navbar">
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+
+    </ul>
+    <button class="btn sing-up">sign up</button>
+    <button class="btn log-in"> log in</button>
+</div>
+
+<!-- fullscreen modal-->
+<div id="modal"></div>
+
+<!--end of full srcreen modal-->
+
+<!--body content-->
+
+<section class="services sec.width" id="servises">
+    <div class="title">
+        <h2>services</h2>
+    </div>
+    <div class="services-container">
+        <!--single service-->
+        <article class="service">
+            <div class="service-icon">
+                <span>
+                    <p>aqui va el emoji </p>
+                </span>
+            </div>
+            <div class="service-content">
+                <h2>foott service</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
+                <button type="button" class="btn"> know more</button>
+            </div>
+        </article>
+        <article class="service">
+            <div class="service-icon">
+                <span>
+                    <p>aqui va el emoji </p>
+                </span>
+            </div>
+            <div class="service-content">
+                <h2>otro de los articulos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
+                <button type="button" class="btn"> know more</button>
+            </div>
+        </article>
+        <article class="service">
+            <div class="service-icon">
+                <span>
+                    <p>aqui va el emoji </p>
+                </span>
+            </div>
+            <div class="service-content">
+                <h2>foott service</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
+                <button type="button" class="btn"> know more</button>
+            </div>
+        </article>
+
+        <article class="service">
+            <div class="service-icon">
+                <span>
+                    <p>aqui va el emoji </p>
+                </span>
+            </div>
+            <div class="service-content">
+                <h2>foott service</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
+                <button type="button" class="btn"> know more</button>
+            </div>
+        </article>        <article class="service">
+            <div class="service-icon">
+                <span>
+                    <p>aqui va el emoji </p>
+                </span>
+            </div>
+            <div class="service-content">
+                <h2>foott service</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
+                <button type="button" class="btn"> know more</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<div class="book">
+    <form class="book-form">
+        <div class="form-item">
+            <label for="chekin-date">check in date</label>
+            <input type="date" id="chekin-date">
+        </div>
+        <div class="form-item">
+            <label for="chekin-date">check out date</label>
+            <input type="date" id="chekout-date">
+        </div>
+        <div class="form-item">
+            <label for="adult">Adults</label>
+            <input type="number" min="1" value="1" id="adult">
+        </div>
+        <div class="form-item">
+            <label for="children">children</label>
+            <input type="number" min="1" value="1" id="children">
+        </div>
+        <div class="form-item">
+            <label for="rooms">Rooms</label>
+            <input type="number" id="rooms">
+        </div>
+        <div class="form-item">
+            <input type="submit" class="btn" value="Book Now" id="chekin-date">
+        </div>
+    </form>
+</div>
+
+
+<section class="rooms sec-width" id="rooms">
+    <div class="title">
+        <h2>rooms</h2>
+    </div>
+    <div class="rooms-container">
+        <article class="room">
+            <div class="room-img">
+                <img src="" alt="room imagen">
+            </div>
+            <div class="room-text">
+                <h3>title</h3>
+                <ul>
+                    <li>
+                        <p>icono</p>
+                        Lorem ipsum dolor sit amet consectetur 
+                    </li>
+                    <li>
+                        <p>icono</p>
+                        Lorem ipsum dolor sit amet consectetur 
+                    </li>
+                    <li>
+                        <p>icono</p>
+                        Lorem ipsum dolor sit amet consectetur 
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis impedit iste aliquid quos facere eum voluptas rem! Mollitia dignissimos nihil vero cumque, ea deserunt quis libero quia nam esse?</p>
+                <p class="rate0">
+                    <span>$99.00</span> per nigth
+                </p>
+                <button type="button" class="btn">book now</button>
+            </div>
+
+        </article>
+
+        <!--targetas para mostrar las habitaciones disponibles--> 
+        <article class="room">
+            <div class="room-img">
+                <img src="" alt="room imagen">
+            </div>
+            <div class="room-text">
+                <h3>title</h3>
+                <ul>
+                    <li>
+                        <p>icono</p>
+                        Lorem ipsum dolor sit amet consectetur 
+                    </li>
+                    <li>
+                        <p>icono</p>
+                        Lorem ipsum dolor sit amet consectetur 
+                    </li>
+                    <li>
+                        <p>icono</p>
+                        Lorem ipsum dolor sit amet consectetur 
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis impedit iste aliquid quos facere eum voluptas rem! Mollitia dignissimos nihil vero cumque, ea deserunt quis libero quia nam esse?</p>
+                <p class="rate0">
+                    <span>$99.00</span> per nigth
+                </p>
+                <button type="button" class="btn">book now</button>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!--calificacion de el establecimiento-->
+<section class="customers" id="customers">
+    <div class="sec-widht">
+        <div class="title">
+            <h2>customers</h2>
+        </div>
+        <div class="customers-container">
+            <!--calificacion-->
+            <div class="customer">
+                <div class="rating">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+                <h3>"Un verdadero paraíso"</h3>
+                <p>"Este hotel es un sueño hecho realidad. Las vistas son impresionantes, perfectas para relajarse y desconectarse del mundo. Las áreas para compartir son acogedoras y la paz que transmite la naturaleza es indescriptible. ¡Sin duda volveré!"</p>
+                <img src="/img/cliente4.jpeg" alt="customer image">
+                <span>pirobo con vista </span>
+            </div>
+
+            <!--formas de calificar el servicio por medio de varias personas-->
+
+            <div class="customer">
+                <div class="rating">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+                <h3>Perfecto para recargar energías"</h3>
+                <p>"Quedé encantado con mi estadía. Desde la tranquilidad de las zonas verdes hasta los rincones para compartir momentos en familia, todo fue espectacular. Las vistas al atardecer son mágicas. ¡Un lugar que invita a quedarse más tiempo!"</p>
+                <img src="/img/clioente3.png" alt="customer image">
+                <span>otro pirobo mas</span>
+            </div>
+<!--otro mas-->
+            <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star"></i></i></span>
+                    </div>
+                <h3>"Un escape ideal"</h3>
+                <p>"El hotel superó mis expectativas. Las vistas son de postal, y los espacios para compartir con amigos o simplemente disfrutar de la naturaleza son maravillosos. Es increíble cómo se respira tanta paz en este lugar."</p>
+                <img src="/img/cliente2.png" alt="customer image">
+                <span>pirobo 2 </span>
+            </div>
+        <div class="customer">
+                <div class="rating">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            <h3>"Un refugio para el alma"</h3>
+            <p>"Este hotel es perfecto para quienes buscan paz y tranquilidad. Las vistas a las montañas y los jardines son increíbles. Me encantó la calidez de los espacios para compartir y cómo la naturaleza lo envuelve todo. ¡Me voy con el corazón lleno!"</p>
+            <img src="/img/cliente1.jpg.png" alt="customer image">
+            <span>PIROBa 1</span>
+        </div>
+    </div>
+
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h2>abaut us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum expedita maxime perspiciatis sint modi ad, odit cum iure enim nostrum.</p>
+            <ul class="social-icons"> 
+                <li class="flex">
+                    <p>icono</p>
+                </li>
+                <li class="flex">
+                    <p>icono</p>
+                </li>
+                <li class="flex">
+                    <p>icono</p>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>useful links</h2>
+            <a href="">blog</a>
+            <a href="">rooms</a>
+            <a href="">subscrition</a>
+            <a href="">gift card</a>
+        </div>
+        <div>
+            <h2>privacy</h2>
+            <a href="">career</a>
+            <a href="">abaut us</a>
+            <a href="">contac us</a>
+            <a href="">services</a>
+        </div>
+
+        <div>
+            <h2>have a questions</h2>
+            <div class="contact-item">
+                <span>
+                    <p>icono</p>
+                </span>
+                <span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <p>icono</p>
+                </span>
+                <span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <p>icono</p>
+                </span>
+                <span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
+                </span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
