@@ -13,7 +13,7 @@
     <!-- header o encabezado de la pagina -->
     <header class="header" id="header">
         <div class="head-top">
-            <div class="site-name">
+            <div class="site-name" id="inicio">
                 <span>Hotel</span>
             </div>
             <div class="site-nav">
@@ -34,9 +34,9 @@
         <i class="fas fa-times-circle"></i>     </span>
 
     <ul class="navbar">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="/pages/reservas.html">Reservas</a></li>
+        <li><a href="/pages/contacto.html">Contacto</a></li>
 
     </ul>
     <button class="btn sing-up">sign up</button>
@@ -45,6 +45,11 @@
 
 <!-- fullscreen modal-->
 <div id="modal"></div>
+
+      <!--BOton flotante en la pagina para que ingresen directamente a el watsap para mas informacion -->
+      <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-3 left-3 sm:left-5 md:left-4 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+        <img src="/img/whatsapp.png" alt="WhatsApp" class="w-6 h-6 sm:w-8 sm:h-8 md:w-8 md:h-8">
+      </a>
 
 <!--end of full srcreen modal-->
 
@@ -59,19 +64,19 @@
         <article class="service">
             <div class="service-icon">
                 <span>
-                    <p>aqui va el emoji </p>
+                    <img src="/img/875f31aa0c6aef24bd162d4c5f97a620.jpg" alt="">
                 </span>
             </div>
             <div class="service-content">
-                <h2>foott service</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
-                <button type="button" class="btn"> know more</button>
+                <h2>Restaurantes </h2>
+                <p>Disfruta de una experiencia culinaria excepcional en nuestro restaurante, donde la tradición y la innovación se encuentran en cada plato. Ofrecemos una variedad de opciones gastronómicas, desde platos internacionales hasta recetas locales, preparadas con los ingredientes más frescos y de la mejor calidad.</p>
+                <button type="button" class="btn"> Leer mas</button>
             </div>
         </article>
         <article class="service">
             <div class="service-icon">
                 <span>
-                    <p>aqui va el emoji </p>
+                    <img src="/img/875f31aa0c6aef24bd162d4c5f97a620.jpg" alt="">
                 </span>
             </div>
             <div class="service-content">
@@ -118,104 +123,6 @@
         </article>
 
     </div>
-</section>
-
-
-<div class="book">
-    <form class="book-form">
-        <div class="form-item">
-            <label for="chekin-date">check in date</label>
-            <input type="date" id="chekin-date">
-        </div>
-        <div class="form-item">
-            <label for="chekin-date">check out date</label>
-            <input type="date" id="chekout-date">
-        </div>
-        <div class="form-item">
-            <label for="adult">Adults</label>
-            <input type="number" min="1" value="1" id="adult">
-        </div>
-        <div class="form-item">
-            <label for="children">children</label>
-            <input type="number" min="1" value="1" id="children">
-        </div>
-        <div class="form-item">
-            <label for="rooms">Rooms</label>
-            <input type="number" id="rooms">
-        </div>
-        <div class="form-item">
-            <input type="submit" class="btn" value="Book Now" id="chekin-date">
-        </div>
-    </form>
-</div>
-
-
-<section class="rooms sec-width" id="rooms">
-    <div class="title">
-        <h2>rooms</h2>
-    </div>
-    <div class="rooms-container">
-        <article class="room">
-            <div class="room-img">
-                <img src="" alt="room imagen">
-            </div>
-            <div class="room-text">
-                <h3>title</h3>
-                <ul>
-                    <li>
-                        <p>icono</p>
-                        Lorem ipsum dolor sit amet consectetur 
-                    </li>
-                    <li>
-                        <p>icono</p>
-                        Lorem ipsum dolor sit amet consectetur 
-                    </li>
-                    <li>
-                        <p>icono</p>
-                        Lorem ipsum dolor sit amet consectetur 
-                    </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis impedit iste aliquid quos facere eum voluptas rem! Mollitia dignissimos nihil vero cumque, ea deserunt quis libero quia nam esse?</p>
-                <p class="rate0">
-                    <span>$99.00</span> per nigth
-                </p>
-                <button type="button" class="btn">book now</button>
-            </div>
-
-        </article>
-
-        <!--targetas para mostrar las habitaciones disponibles--> 
-        <article class="room">
-            <div class="room-img">
-                <img src="" alt="room imagen">
-            </div>
-            <div class="room-text">
-                <h3>title</h3>
-                <ul>
-                    <li>
-                        <p>icono</p>
-                        Lorem ipsum dolor sit amet consectetur 
-                    </li>
-                    <li>
-                        <p>icono</p>
-                        Lorem ipsum dolor sit amet consectetur 
-                    </li>
-                    <li>
-                        <p>icono</p>
-                        Lorem ipsum dolor sit amet consectetur 
-                    </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis impedit iste aliquid quos facere eum voluptas rem! Mollitia dignissimos nihil vero cumque, ea deserunt quis libero quia nam esse?</p>
-                <p class="rate0">
-                    <span>$99.00</span> per nigth
-                </p>
-                <button type="button" class="btn">book now</button>
-            </div>
-
-        </article>
-
-    </div>
-
 </section>
 
 
