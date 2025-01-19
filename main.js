@@ -2,6 +2,7 @@ const navBtn = document.getElementById('nav-btn');
 const cancelBtn = document.getElementById('cancel-btn');
 const sideNav = document.getElementById('sidenav');
 const modal = document.getElementById('modal');
+const signInBtn = document.getElementById('registro'); // Agregado
 
 navBtn.addEventListener("click", function(){
     sideNav.classList.add('show');
@@ -19,6 +20,12 @@ window.addEventListener('click', function(event){
         modal.classList.remove('showModal');
     }
 });
+
+// Evento para redirigir a otra página al hacer clic en 'sign-in'
+registro.addEventListener('click', function() {
+window.location.href = 'pages/formRegistro.html'; // Reemplaza con la URL deseada
+});
+
 
 //carrusel de fotos de el inicio 
 

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+
 
     <script defer src="/main.js"></script>
 </head>
+
 <body>
     <!-- header o encabezado de la pagina -->
     <header class="header" id="header">
@@ -20,200 +24,193 @@
                 <span id="nav-btn">Menu</span>
             </div>
         </div>
+        <!--carrusel de inicio-->
+        <div class="relative w-12/12 max-w-5xl overflow-hidden rounded-lg shadow-lg z-20">
+            <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
+                <img src="/img/25281.webp" alt="Foto 1" class="w-full flex-shrink-0">
+                <img src="/img/6.jpg" alt="Foto 2" class="w-full flex-shrink-0">
+                <img src="image3.jpg" alt="Foto 3" class="w-full flex-shrink-0">
+                <img src="image4.jpg" alt="Foto 4" class="w-full flex-shrink-0">
+                <img src="image5.jpg" alt="Foto 5" class="w-full flex-shrink-0">
+                <img src="image6.jpg" alt="Foto 6" class="w-full flex-shrink-0">
+                <img src="image7.jpg" alt="Foto 7" class="w-full flex-shrink-0">
+            </div>
+            <!-- Botones de navegación -->
+            <button
+                class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
+                id="prevBtn">❮</button>
+            <button
+                class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
+                id="nextBtn">❯</button>
+        </div>
+
 
         <div class="head-bottom flex">
             <h2>El Rincon de Camila </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, mollitia nulla? Nisi, ut, voluptates recusandae nulla aut rem asperiores quia temporibus vitae quis aliquid earum culpa blanditiis fugiat, totam ipsam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, mollitia nulla? Nisi, ut, voluptates
+                recusandae nulla aut rem asperiores quia temporibus vitae quis aliquid earum culpa blanditiis fugiat,
+                totam ipsam.</p>
             <button type="button" class="head-btn">Get started</button>
         </div>
 
-
-
-        <!--carrusel de inicio-->
-    <div class="relative w-2/2 max-w-5xl overflow-hidden rounded-lg shadow-lg z-20">
-        <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
-            <img src="/img/25281.webp" alt="Foto 1" class="w-full flex-shrink-0">
-            <img src="/img/6.jpg" alt="Foto 2" class="w-full flex-shrink-0">
-            <img src="image3.jpg" alt="Foto 3" class="w-full flex-shrink-0">
-            <img src="image4.jpg" alt="Foto 4" class="w-full flex-shrink-0">
-            <img src="image5.jpg" alt="Foto 5" class="w-full flex-shrink-0">
-            <img src="image6.jpg" alt="Foto 6" class="w-full flex-shrink-0">
-            <img src="image7.jpg" alt="Foto 7" class="w-full flex-shrink-0">
-        </div>
-        <!-- Botones de navegación -->
-        <button 
-            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
-            id="prevBtn">❮</button>
-        <button 
-            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
-            id="nextBtn">❯</button>
-    </div>
-
-
-
     </header>
-    <!--carrusel de inicio-->
-    <div class="relative w-2/2 max-w-5xl overflow-hidden rounded-lg shadow-lg">
-        <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
-            <img src="/img/25281.webp" alt="Foto 1" class="w-full flex-shrink-0">
-            <img src="/img/6.jpg" alt="Foto 2" class="w-full flex-shrink-0">
-            <img src="image3.jpg" alt="Foto 3" class="w-full flex-shrink-0">
-            <img src="image4.jpg" alt="Foto 4" class="w-full flex-shrink-0">
-            <img src="image5.jpg" alt="Foto 5" class="w-full flex-shrink-0">
-            <img src="image6.jpg" alt="Foto 6" class="w-full flex-shrink-0">
-            <img src="image7.jpg" alt="Foto 7" class="w-full flex-shrink-0">
-        </div>
-        <!-- Botones de navegación -->
-        <button 
-            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
-            id="prevBtn">❮</button>
-        <button 
-            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
-            id="nextBtn">❯</button>
+
+
+
+    <!-- side navbar-->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times-circle"></i> </span>
+
+        <ul class="navbar">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="/pages/reservas.html">Reservas</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+
+        </ul>
+        <button class="btn sing-up" id="registro">sign up</button>
+        <button class="btn log-in"> log in</button>
     </div>
-  
 
+    <!-- fullscreen modal-->
+    <div id="modal"></div>
 
-
-
-
-<!-- side navbar-->
-<div class="sidenav" id="sidenav">
-    <span class="cancel-btn" id="cancel-btn">
-        <i class="fas fa-times-circle"></i>     </span>
-
-    <ul class="navbar">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="/pages/reservas.html">Reservas</a></li>
-        <li><a href="/pages/contacto.html">Contacto</a></li>
-
-    </ul>
-    <button class="btn sing-up">sign up</button>
-    <button class="btn log-in"> log in</button>
-</div>
-
-<!-- fullscreen modal-->
-<div id="modal"></div>
-
-      <!--BOton flotante en la pagina para que ingresen directamente a el watsap para mas informacion -->
-      <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-3 left-3 sm:left-5 md:left-4 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+    <!--BOton flotante en la pagina para que ingresen directamente a el watsap para mas informacion -->
+    <a href="https://wa.me/1234567890" target="_blank"
+        class="fixed bottom-3 left-3 sm:left-5 md:left-4 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
         <img src="/img/whatsapp.png" alt="WhatsApp" class="w-6 h-6 sm:w-8 sm:h-8 md:w-1 md:h-1" id="wassa">
-      </a>
+    </a>
 
-<!--end of full srcreen modal-->
+    <!--end of full srcreen modal-->
 
-<!--body content-->
+    <!--body content-->
 
-<section class="services sec.width" id="servises">
-    <div class="title">
-        <h2>services</h2>
-    </div>
-    <div class="services-container">
-        <!--single service-->
-        <article class="service">
-            <div class="service-icon">
-                <span>
-                    <img src="/img/rio.jpeg" alt="cascada">
-                </span>
-            </div>
-            <div class="service-content">
-                <h2>Restaurantes </h2>
-                <p>Disfruta de una experiencia culinaria excepcional en nuestro restaurante, donde la tradición y la innovación se encuentran en cada plato. Ofrecemos una variedad de opciones gastronómicas, desde platos internacionales hasta recetas locales, preparadas con los ingredientes más frescos y de la mejor calidad.</p>
-                <button type="button" class="btn"> Leer mas</button>
-            </div>
-        </article>
-        <article class="service">
-            <div class="service-icon">
-                <span>
-                    <img src="/img/875f31aa0c6aef24bd162d4c5f97a620.jpg" alt="">
-                </span>
-            </div>
-            <div class="service-content">
-                <h2>otro de los articulos</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
-                <button type="button" class="btn"> know more</button>
-            </div>
-        </article>
-        <article class="service">
-            <div class="service-icon">
-                <span>
-                    <img src="/img/entrada.png" alt="fogata">
-                </span>
-            </div>
-            <div class="service-content">
-                <h2>foott service</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
-                <button type="button" class="btn"> know more</button>
-            </div>
-        </article>
-
-        <article class="service">
-            <div class="service-icon">
-                <span>
-                    <img src="/img/Suite_Rio.jpg" alt="rio">
-                </span>
-            </div>
-            <div class="service-content">
-                <h2>foott service</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
-                <button type="button" class="btn"> know more</button>
-            </div>
-        </article>        <article class="service">
-            <div class="service-icon">
-                <span>
-                    <img src="/img/vista.jpg" alt="vista">
-                </span>
-            </div>
-            <div class="service-content">
-                <h2>foott service</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae, quidem dolore ex placeat temporibus!</p>
-                <button type="button" class="btn"> know more</button>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-
-<!--calificacion de el establecimiento-->
-<section class="customers" id="customers">
-    <div class="sec-widht">
+    <section class="services sec.width" id="servises">
         <div class="title">
-            <h2>customers</h2>
+            <h2>services</h2>
         </div>
-        <div class="customers-container">
-            <!--calificacion-->
-            <div class="customer">
-                <div class="rating">
-                    <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+        <div class="services-container">
+            <!--single service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <img src="/img/rio.jpeg" alt="cascada">
+                    </span>
                 </div>
-                <h3>"Un verdadero paraíso"</h3>
-                <p>"Este hotel es un sueño hecho realidad. Las vistas son impresionantes, perfectas para relajarse y desconectarse del mundo. Las áreas para compartir son acogedoras y la paz que transmite la naturaleza es indescriptible. ¡Sin duda volveré!"</p>
-                <img src="/img/cliente4.jpeg" alt="customer image">
-                <span>pirobo con vista </span>
-            </div>
-
-            <!--formas de calificar el servicio por medio de varias personas-->
-
-            <div class="customer">
-                <div class="rating">
-                    <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                <div class="service-content">
+                    <h2>Restaurantes </h2>
+                    <p>Disfruta de una experiencia culinaria excepcional en nuestro restaurante, donde la tradición y la
+                        innovación se encuentran en cada plato. Ofrecemos una variedad de opciones gastronómicas, desde
+                        platos internacionales hasta recetas locales, preparadas con los ingredientes más frescos y de
+                        la mejor calidad.</p>
+                    <button type="button" class="btn"> Leer mas</button>
                 </div>
-                <h3>Perfecto para recargar energías"</h3>
-                <p>"Quedé encantado con mi estadía. Desde la tranquilidad de las zonas verdes hasta los rincones para compartir momentos en familia, todo fue espectacular. Las vistas al atardecer son mágicas. ¡Un lugar que invita a quedarse más tiempo!"</p>
-                <img src="/img/clioente3.png" alt="customer image">
-                <span>otro pirobo mas</span>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <img src="/img/875f31aa0c6aef24bd162d4c5f97a620.jpg" alt="">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>otro de los articulos</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae
+                        illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae,
+                        quidem dolore ex placeat temporibus!</p>
+                    <button type="button" class="btn"> know more</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <img src="/img/entrada.png" alt="fogata">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>foott service</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae
+                        illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae,
+                        quidem dolore ex placeat temporibus!</p>
+                    <button type="button" class="btn"> know more</button>
+                </div>
+            </article>
+
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <img src="/img/Suite_Rio.jpg" alt="rio">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>foott service</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae
+                        illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae,
+                        quidem dolore ex placeat temporibus!</p>
+                    <button type="button" class="btn"> know more</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <img src="/img/vista.jpg" alt="vista">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>foott service</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel aliquam ab ratione quae
+                        illo doloribus, quis animi reprehenderit impedit aperiam nemo natus laudantium repudiandae,
+                        quidem dolore ex placeat temporibus!</p>
+                    <button type="button" class="btn"> know more</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!--calificacion de el establecimiento-->
+    <section class="customers" id="customers">
+        <div class="sec-widht">
+            <div class="title">
+                <h2>customers</h2>
             </div>
-<!--otro mas-->
-            <div class="customer">
+            <div class="customers-container">
+                <!--calificacion-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                    <h3>"Un verdadero paraíso"</h3>
+                    <p>"Este hotel es un sueño hecho realidad. Las vistas son impresionantes, perfectas para relajarse y
+                        desconectarse del mundo. Las áreas para compartir son acogedoras y la paz que transmite la
+                        naturaleza es indescriptible. ¡Sin duda volveré!"</p>
+                    <img src="/img/cliente4.jpeg" alt="customer image">
+                    <span>pirobo con vista </span>
+                </div>
+
+                <!--formas de calificar el servicio por medio de varias personas-->
+
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                    <h3>Perfecto para recargar energías"</h3>
+                    <p>"Quedé encantado con mi estadía. Desde la tranquilidad de las zonas verdes hasta los rincones
+                        para compartir momentos en familia, todo fue espectacular. Las vistas al atardecer son mágicas.
+                        ¡Un lugar que invita a quedarse más tiempo!"</p>
+                    <img src="/img/clioente3.png" alt="customer image">
+                    <span>otro pirobo mas</span>
+                </div>
+                <!--otro mas-->
+                <div class="customer">
                     <div class="rating">
                         <span><i class="fa-sharp fa-solid fa-star"></i></i></span>
                         <span><i class="fa-sharp fa-solid fa-star"></i></span>
@@ -221,95 +218,101 @@
                         <span><i class="fa-sharp fa-solid fa-star"></i></span>
                         <span><i class="fa-regular fa-star"></i></i></span>
                     </div>
-                <h3>"Un escape ideal"</h3>
-                <p>"El hotel superó mis expectativas. Las vistas son de postal, y los espacios para compartir con amigos o simplemente disfrutar de la naturaleza son maravillosos. Es increíble cómo se respira tanta paz en este lugar."</p>
-                <img src="/img/cliente2.png" alt="customer image">
-                <span>pirobo 2 </span>
-            </div>
-        <div class="customer">
-                <div class="rating">
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
-                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <h3>"Un escape ideal"</h3>
+                    <p>"El hotel superó mis expectativas. Las vistas son de postal, y los espacios para compartir con
+                        amigos o simplemente disfrutar de la naturaleza son maravillosos. Es increíble cómo se respira
+                        tanta paz en este lugar."</p>
+                    <img src="/img/cliente2.png" alt="customer image">
+                    <span>pirobo 2 </span>
                 </div>
-            <h3>"Un refugio para el alma"</h3>
-            <p>"Este hotel es perfecto para quienes buscan paz y tranquilidad. Las vistas a las montañas y los jardines son increíbles. Me encantó la calidez de los espacios para compartir y cómo la naturaleza lo envuelve todo. ¡Me voy con el corazón lleno!"</p>
-            <img src="/img/cliente1.jpg.png" alt="customer image">
-            <span>PIROBa 1</span>
-        </div>
-    </div>
-
-
-    </div>
-
-</section>
-
-
-<footer class="footer">
-    <div class="footer-container">
-        <div>
-            <h2>abaut us</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum expedita maxime perspiciatis sint modi ad, odit cum iure enim nostrum.</p>
-            <ul class="social-icons"> 
-                <li class="flex">
-                    <p>icono</p>
-                </li>
-                <li class="flex">
-                    <p>icono</p>
-                </li>
-                <li class="flex">
-                    <p>icono</p>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>useful links</h2>
-            <a href="">blog</a>
-            <a href="">rooms</a>
-            <a href="">subscrition</a>
-            <a href="">gift card</a>
-        </div>
-        <div>
-            <h2>privacy</h2>
-            <a href="">career</a>
-            <a href="">abaut us</a>
-            <a href="">contac us</a>
-            <a href="">services</a>
-        </div>
-
-        <div>
-            <h2>have a questions</h2>
-            <div class="contact-item">
-                <span>
-                    <p>icono</p>
-                </span>
-                <span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
-                </span>
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                    <h3>"Un refugio para el alma"</h3>
+                    <p>"Este hotel es perfecto para quienes buscan paz y tranquilidad. Las vistas a las montañas y los
+                        jardines son increíbles. Me encantó la calidez de los espacios para compartir y cómo la
+                        naturaleza lo envuelve todo. ¡Me voy con el corazón lleno!"</p>
+                    <img src="/img/cliente1.jpg.png" alt="customer image">
+                    <span>PIROBa 1</span>
+                </div>
             </div>
-            <div class="contact-item">
-                <span>
-                    <p>icono</p>
-                </span>
-                <span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
-                </span>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>abaut us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum expedita maxime perspiciatis
+                    sint modi ad, odit cum iure enim nostrum.</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <p>icono</p>
+                    </li>
+                    <li class="flex">
+                        <p>icono</p>
+                    </li>
+                    <li class="flex">
+                        <p>icono</p>
+                    </li>
+                </ul>
             </div>
-            <div class="contact-item">
-                <span>
-                    <p>icono</p>
-                </span>
-                <span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
-                </span>
+
+            <div>
+                <h2>useful links</h2>
+                <a href="">blog</a>
+                <a href="">rooms</a>
+                <a href="">subscrition</a>
+                <a href="">gift card</a>
+            </div>
+            <div>
+                <h2>privacy</h2>
+                <a href="">career</a>
+                <a href="">abaut us</a>
+                <a href="">contac us</a>
+                <a href="">services</a>
+            </div>
+
+            <div>
+                <h2>have a questions</h2>
+                <div class="contact-item">
+                    <span>
+                        <p>icono</p>
+                    </span>
+                    <span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <p>icono</p>
+                    </span>
+                    <span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <p>icono</p>
+                    </span>
+                    <span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
 
-</footer>
+    </footer>
 
 </body>
+
 </html>
