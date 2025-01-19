@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nameUser": "Usuario 1",
+      "emailUser": "usuario1@example.com",
+      "password": "contraseña123"
+    },
+    {
+      "id": "2",
+      "nameUser": "Usuario 2",
+      "emailUser": "usuario2@example.com",
+      "password": "contraseña456"
+    },
+    {
+      "id": "0b76",
+      "nameUser": "julian ",
+      "emailUser": "ssss@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "f4c3",
+      "nameUser": "julian ",
+      "emailUser": "ssss@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "b8d3",
+      "nameUser": "julian ",
+      "emailUser": "stiven.g2031@gmail.com",
+      "password": "98765421"
+    },
+    {
+      "id": "a67b",
+      "nameUser": "julian ",
+      "emailUser": "stiven.g2031@gmail.com",
+      "password": "852852741"
+    },
+    {
+      "id": "1fd4",
+      "nameUser": "julian ",
+      "emailUser": "stiven.g2031@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "fa40",
+      "nameUser": "yo soy una calo",
+      "emailUser": "wassssa@gmail.com",
+      "password": "123456987"
+    }
+  ]
+}

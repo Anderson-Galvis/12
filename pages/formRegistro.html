@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro Mejorado</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script defer src="/login.js"></script>
 </head>
+
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
     <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8 space-y-6">
         <h2 class="text-3xl font-semibold text-center text-gray-800">Registro de Usuario</h2>
 
         <!-- Formulario -->
-        <form action="#" method="POST" class="space-y-6">
+        <form action="#" method="POST" class="space-y-6" id="regis">
             <!-- Nombre -->
             <div>
                 <label for="name" class="block text-lg font-medium text-gray-700">Nombre</label>
@@ -36,7 +39,8 @@
 
             <!-- Confirmar Contraseña -->
             <div>
-                <label for="confirmPassword" class="block text-lg font-medium text-gray-700">Confirmar Contraseña</label>
+                <label for="confirmPassword" class="block text-lg font-medium text-gray-700">Confirmar
+                    Contraseña</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required
                     class="mt-2 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none">
             </div>
@@ -48,6 +52,7 @@
                     Registrarse
                 </button>
             </div>
+            <div id="warnings"></div>
         </form>
 
 
@@ -55,4 +60,5 @@
     </div>
 
 </body>
+
 </html>
