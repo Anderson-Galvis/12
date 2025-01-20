@@ -37,7 +37,7 @@ btnInicioSesion.addEventListener('click', function() {
 
 //evento para el boton de iniciar sesion despues de crear la cuenta 
 registro.addEventListener('click', function() {
-
+//los envia a crear el la cuenta 
     let conectarForm = window.location.pathname;
     
     if (conectarForm === '/index.html') {

@@ -67,3 +67,44 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+//evento para el inicio de sesion 
+
+
+
+
+const loginForm = document.getElementById("loginForm");
+const warning = document.getElementById("warning");
+
+loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    try {
+        // Solicitar datos del servidor
+        const response = await fetch("http://localhost:3000/users");
+        if (!response.ok) throw new Error("Error al conectarse al servidor");
+
+        const users = await response.json();
+
+        // Verificar si el usuario existe
+        const user = users.find(u => u.emailUser === email && u.password === password);
+
+        if (user) {
+            alert("Inicio de sesión exitoso");
+            // Redirigir al usuario a otra página
+            window.location.href = "/pages/reservas.html";
+        } else {
+            warning.textContent = "Correo o contraseña incorrectos.";
+            warning.classList.remove("hidden");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        warning.textContent = "No se pudo conectar con el servidor.";
+        warning.classList.remove("hidden");
+    }
+});
