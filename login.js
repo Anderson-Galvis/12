@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let form = document.getElementById('regis'); // Usar el ID correcto del formulario
+    let form = document.getElementById('form'); // Usar el ID correcto del formulario
     if (form) {
         form.addEventListener("submit", async (e) => {
             e.preventDefault(); // Evitar envío por defecto
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 warnings += `El correo electrónico no es válido. <br>`;
                 entrar = true;
             }
-            if (pass.value.length < 8) {
+            if (pass.value.length < 2) {
                 warnings += `La contraseña debe tener al menos 8 caracteres. <br>`;
                 entrar = true;
             }
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 if (response.ok) {
-                    alert('enviado loca marica '); // Redirigir si es exitoso
+                    window.location.href = '/pages/reservas.html';
                 } else {
                     console.error("Error al crear el usuario:", response.statusText);
                     parrafo.innerHTML = "Hubo un problema al crear el usuario.";

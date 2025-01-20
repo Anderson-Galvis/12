@@ -2,7 +2,7 @@ const navBtn = document.getElementById('nav-btn');
 const cancelBtn = document.getElementById('cancel-btn');
 const sideNav = document.getElementById('sidenav');
 const modal = document.getElementById('modal');
-const signInBtn = document.getElementById('registro'); // Agregado
+const registro = document.getElementById('regis'); // Agregado
 
 navBtn.addEventListener("click", function(){
     sideNav.classList.add('show');
@@ -23,7 +23,8 @@ window.addEventListener('click', function(event){
 
 // Evento para redirigir a otra página al hacer clic en 'sign-in'
 registro.addEventListener('click', function() {
-window.location.href = 'pages/formRegistro.html'; // Reemplaza con la URL deseada
+
+window.location.href = 'formRegistro.html'; // Reemplaza con la URL deseada
 });
 
 
@@ -127,6 +128,9 @@ form.addEventListener("submit", async (e) =>{
                 const data = await response.json();
                 console.log("Usuario creado:", data);
                 parrafo.innerHTML = "Usuario creado exitosamente";
+                
+                
+
             } else {
                 console.error("Error al crear el usuario:", response.statusText);
                 parrafo.innerHTML = "Hubo un problema al crear el usuario.";
