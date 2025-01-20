@@ -2,7 +2,8 @@ const navBtn = document.getElementById('nav-btn');
 const cancelBtn = document.getElementById('cancel-btn');
 const sideNav = document.getElementById('sidenav');
 const modal = document.getElementById('modal');
-const registro = document.getElementById('regis'); // Agregado
+const registro = document.getElementById('regis'); // boton para registrarse 
+const btnInicioSesion = document.getElementById('btnInicioSesion'); // boton para iniciar secion 
 
 navBtn.addEventListener("click", function(){
     sideNav.classList.add('show');
@@ -22,9 +23,28 @@ window.addEventListener('click', function(event){
 });
 
 // Evento para redirigir a otra página al hacer clic en 'sign-in'
+btnInicioSesion.addEventListener('click', function() {
+
+    let conectarForm = window.location.pathname;
+    
+    if (conectarForm === '/index.html') {
+        window.location.href = 'pages/inicioSesion.html';  // Redirigir a otro enlace específico para index.html
+    } else {
+        window.location.href = 'inicioSesion.html'; 
+     } // Reemplaza con la URL deseada
+});
+
+
+//evento para el boton de iniciar sesion despues de crear la cuenta 
 registro.addEventListener('click', function() {
 
-window.location.href = 'formRegistro.html'; // Reemplaza con la URL deseada
+    let conectarForm = window.location.pathname;
+    
+    if (conectarForm === '/index.html') {
+        window.location.href = 'pages/formRegistro.html';  // Redirigir a otro enlace específico para index.html
+    } else {
+        window.location.href = 'formRegistro.html'; 
+     } // Reemplaza con la URL deseada
 });
 
 
