@@ -15,7 +15,7 @@
 
 <body>
     <!-- header o encabezado de la pagina -->
-    <header class="header" id="header">
+    <header class="flex content-between" id="header" >
         <div class="head-top">
             <div class="site-name" id="inicio">
                 <span>Hotel</span>
@@ -24,25 +24,7 @@
                 <span id="nav-btn">Menu</span>
             </div>
         </div>
-        <!--carrusel de inicio-->
-        <div class="relative w-12/12 max-w-5xl overflow-hidden rounded-lg shadow-lg z-20">
-            <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
-                <img src="/img/25281.webp" alt="Foto 1" class="w-full flex-shrink-0">
-                <img src="/img/6.jpg" alt="Foto 2" class="w-full flex-shrink-0">
-                <img src="image3.jpg" alt="Foto 3" class="w-full flex-shrink-0">
-                <img src="image4.jpg" alt="Foto 4" class="w-full flex-shrink-0">
-                <img src="image5.jpg" alt="Foto 5" class="w-full flex-shrink-0">
-                <img src="image6.jpg" alt="Foto 6" class="w-full flex-shrink-0">
-                <img src="image7.jpg" alt="Foto 7" class="w-full flex-shrink-0">
-            </div>
-            <!-- Botones de navegación -->
-            <button
-                class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
-                id="prevBtn">❮</button>
-            <button
-                class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
-                id="nextBtn">❯</button>
-        </div>
+     
 
 
         <div class="head-bottom flex">
@@ -56,6 +38,25 @@
     </header>
 
 
+       <!--carrusel de inicio-->
+       <div class="relative w-4/6 h-1/3flex-wrap max-w-5xl overflow-hidden rounded-lg shadow-lg z-20">
+        <div class=" transition-transform duration-500 ease-in-out" id="carrusel">
+            <img src="/img/25281.webp" alt="Foto 1" class="w-full flex-shrink-0">
+            <img src="/img/largphoto.jpg" alt="Foto 2" class="w-full flex-shrink-0">
+            <img src="image3.jpg" alt="Foto 3" class="w-full flex-shrink-0">
+            <img src="image4.jpg" alt="Foto 4" class="w-full flex-shrink-0">
+            <img src="image5.jpg" alt="Foto 5" class="w-full flex-shrink-0">
+            <img src="image6.jpg" alt="Foto 6" class="w-full flex-shrink-0">
+            <img src="image7.jpg" alt="Foto 7" class="w-full flex-shrink-0">
+        </div>
+        <!-- Botones de navegación -->
+        <button
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
+            id="prevBtn">❮</button>
+        <button
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900 focus:outline-none"
+            id="nextBtn">❯</button>
+    </div>
 
     <!-- side navbar-->
     <div class="sidenav" id="sidenav">
