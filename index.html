@@ -15,7 +15,7 @@
 
 <body>
     <!-- header o encabezado de la pagina -->
-    <header class="flex content-between" id="header" >
+    <header class="header" id="header" >
         <div class="head-top">
             <div class="site-name" id="inicio">
                 <span>Hotel</span>
@@ -32,7 +32,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, mollitia nulla? Nisi, ut, voluptates
                 recusandae nulla aut rem asperiores quia temporibus vitae quis aliquid earum culpa blanditiis fugiat,
                 totam ipsam.</p>
-            <button type="button" class="head-btn">Get started</button>
+            <button type="button" id="btnInicioSesion" class="head-btn">Get started</button>
         </div>
 
     </header>
@@ -190,7 +190,7 @@
                         desconectarse del mundo. Las áreas para compartir son acogedoras y la paz que transmite la
                         naturaleza es indescriptible. ¡Sin duda volveré!"</p>
                     <img src="/img/cliente4.jpeg" alt="customer image">
-                    <span>pirobo con vista </span>
+                    <span>CLiente Hombre 1 </span>
                 </div>
 
                 <!--formas de calificar el servicio por medio de varias personas-->
@@ -208,7 +208,7 @@
                         para compartir momentos en familia, todo fue espectacular. Las vistas al atardecer son mágicas.
                         ¡Un lugar que invita a quedarse más tiempo!"</p>
                     <img src="/img/clioente3.png" alt="customer image">
-                    <span>otro pirobo mas</span>
+                    <span>Cliente Mujer 2</span>
                 </div>
                 <!--otro mas-->
                 <div class="customer">
@@ -224,7 +224,7 @@
                         amigos o simplemente disfrutar de la naturaleza son maravillosos. Es increíble cómo se respira
                         tanta paz en este lugar."</p>
                     <img src="/img/cliente2.png" alt="customer image">
-                    <span>pirobo 2 </span>
+                    <span>Cliente hombre 2 </span>
                 </div>
                 <div class="customer">
                     <div class="rating">
@@ -239,7 +239,7 @@
                         jardines son increíbles. Me encantó la calidez de los espacios para compartir y cómo la
                         naturaleza lo envuelve todo. ¡Me voy con el corazón lleno!"</p>
                     <img src="/img/cliente1.jpg.png" alt="customer image">
-                    <span>PIROBa 1</span>
+                    <span>Cliente mujer 1</span>
                 </div>
             </div>
 
@@ -247,6 +247,7 @@
         </div>
 
     </section>
+
 
 
     <footer class="footer">
@@ -257,13 +258,16 @@
                     sint modi ad, odit cum iure enim nostrum.</p>
                 <ul class="social-icons">
                     <li class="flex">
-                        <p>icono</p>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png"
+                                alt="icono-facebook"></a>
                     </li>
                     <li class="flex">
-                        <p>icono</p>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="/img/instagram.png"
+                                alt="icono-instagram"></a>
                     </li>
                     <li class="flex">
-                        <p>icono</p>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin.png"
+                                alt="icono-linkedin"></a>
                     </li>
                 </ul>
             </div>
@@ -287,7 +291,17 @@
                 <h2>have a questions</h2>
                 <div class="contact-item">
                     <span>
-                        <p>icono</p>
+                        <i class="fas fa-clock"></i>
+                    </span>
+                    <span>
+                        <h3>¿Cuál es el horario de check-in y check-out?</h3>
+                        El horario de check-in es a partir de las 15:00 horas, y el horario de check-out es hasta las
+                        12:00 horas.
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-taxi"></i>
                     </span>
                     <span>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
@@ -295,15 +309,7 @@
                 </div>
                 <div class="contact-item">
                     <span>
-                        <p>icono</p>
-                    </span>
-                    <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
-                    </span>
-                </div>
-                <div class="contact-item">
-                    <span>
-                        <p>icono</p>
+                        <i class="fas fa-times"></i>
                     </span>
                     <span>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, iusto.
@@ -313,7 +319,6 @@
         </div>
 
     </footer>
-
 </body>
 
 </html>

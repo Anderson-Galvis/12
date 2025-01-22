@@ -160,3 +160,21 @@ form.addEventListener("submit", async (e) =>{
             parrafo.innerHTML = "No se pudo conectar con el servidor.";
         }
     });
+
+
+
+    //evento para enviar a las reservas de una vez sin necesidad de ver el resto de el contenido 
+const btnReservas = document.getElementById('btnReservas')
+
+    btnReservas.addEventListener('click', function() {
+    //los envia a crear el la cuenta 
+        let conectarForm = window.location.pathname;
+        
+        console.log(conectarForm)
+        if (conectarForm === 'index.html') {
+            window.location.href = 'pages/reservas.html';  // Redirigir a otro enlace específico para index.html
+        } else {
+            window.location.href = 'pages/reservas.html'; 
+         } // Reemplaza con la URL deseada
+    });
+    
